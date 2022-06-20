@@ -17,9 +17,9 @@ print(f"{Fore.WHITE}Welcome To {Fore.RED}Doragon (Open Source)!")
 username = input(f"\n{Fore.LIGHTYELLOW_EX}[USERNAME]: {Fore.WHITE}")
 password = input(f"{Fore.LIGHTYELLOW_EX}[PASSWORD]: {Fore.WHITE}")
 
-target = input(f"\n{Fore.GREEN}[TARGET]: {Fore.WHITE}")
+target = input(f"\n{Fore.LIGHTGREEN_EX[TARGET]: {Fore.WHITE}")
 report_choice = input(f"\n{Fore.RED}(1) Profile \n(2) Stories \n(3) Highlights\n\n{Fore.WHITE}[?] Option: {Fore.WHITE}")
-report_options = input(f"\n{Fore.RED}Choose A Reason! \n\n{Fore.WHITE}(1) Spam \n(2) Suicide, self injury\n(3) Sale of illegal or regulated goods\n(4) Nudity or sexual activity \n(5) Hate speech or symbols\n(6) Violence or dangerous organizations\n(7) Bullying or harassment\n\n{Fore.GREEN}[?] Option: {Fore.WHITE}") 
+report_options = input(f"\n{Fore.RED}Choose A Reason! \n\n{Fore.WHITE}(1) Spam \n(2) Suicide, self injury\n(3) Sale of illegal or regulated goods\n(4) Nudity or sexual activity \n(5) Hate speech or symbols\n(6) Violence or dangerous organizations\n(7) Bullying or harassment\n\n{Fore.LIGHTGREEN_EX[?] Option: {Fore.WHITE}") 
 web = webdriver.Chrome()
 web.get("https://www.instagram.com/")
 
