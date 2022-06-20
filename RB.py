@@ -12,7 +12,7 @@ except ModuleNotFoundError:
 init(autoreset=False)
 os.system("cls")
 
-print(f"{Fore.WHITE}Welcome To {Fore.RED}Doragon Lite!")
+print(f"{Fore.WHITE}Welcome To {Fore.RED}Doragon (Open Source)!")
 
 username = input(f"\n{Fore.LIGHTYELLOW_EX}[USERNAME]: {Fore.WHITE}")
 password = input(f"{Fore.LIGHTYELLOW_EX}[PASSWORD]: {Fore.WHITE}")
