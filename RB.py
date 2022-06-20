@@ -44,12 +44,6 @@ time.sleep(5)
 web.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[3]/button').click()
 time.sleep(7)
 
-# say no to save login.
-web.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button').click()
-print(f"{Fore.GREEN}[LOGGED_IN]{Fore.WHITE} Successfully logged in.")
-
-
-time.sleep(3)
 # enters target links
 web.get(f"https://www.instagram.com/{target}")
 
@@ -203,10 +197,10 @@ def stories():
 
                 elif report_options == "2":
                     # click suicide and self injury
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[8]').click()
                     # submit report
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/button').click()
                     # close button
                     time.sleep(2)
@@ -215,10 +209,10 @@ def stories():
                 
                 elif report_options == "3":
                     # Reports for Sale of Illegal or regulated goods
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[5]').click()
                     # Click Drugs
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[2]/label/div/input').click()
                     # Click Submit
                     time.sleep(2)
@@ -230,9 +224,9 @@ def stories():
 
                 elif report_options == "4":
                     # Reports for Nudity
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[2]').click()
-                    time.sleep(2)
+                    time.sleep(3)
                     # Selects Nudity Or Pornography
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div/input').click()
                     time.sleep(2)
@@ -245,10 +239,10 @@ def stories():
 
                 elif report_choice == "5":
                     # Reports For Hate Speech
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[3]').click()
                     # Submit Report
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/button').click()
                     time.sleep(2)
                     # Close
@@ -257,10 +251,10 @@ def stories():
 
                 elif report_choice == "6":
                     # Reports For Violence
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[4]').click()
                     # Selects Dangerous organizations
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div/input').click()
                     # Submit Report
                     time.sleep(2)
@@ -272,10 +266,10 @@ def stories():
 
                 elif report_choice == "7":
                     # Reports For Bullying 
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[6]').click()
                     # Clicks Bullying "Me"
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[1]').click()
                     # Submit Report
                     time.sleep(2)
@@ -316,10 +310,10 @@ def highlights():
 
                 elif report_options == "2":
                     # click self-injury
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[8]').click()
                     # submit report
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/button').click()
                     # close
                     time.sleep(2)
@@ -328,10 +322,10 @@ def highlights():
 
                 elif report_options == "3":
                     # Report For Sale Of Illegal or regulated goods
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[5]')
                     # Clicks Drugs
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[2]/label/div/input').click()
                     # Submit
                     time.sleep(2)
@@ -343,10 +337,10 @@ def highlights():
 
                 elif report_options == "4":
                     # Reports For Nudity
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[2]').click()
                     # Clicks Nudity Or Pornography
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div/input').click()
                     # Submit Report
                     time.sleep(2)
@@ -358,10 +352,10 @@ def highlights():
                 
                 elif report_options == "5":
                     # Reports For Hate Speech
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[3]').click()
                     # Submit
-                    time.sleep(2) 
+                    time.sleep(3) 
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/button').click()
                     # close
                     time.sleep(2)
@@ -370,10 +364,10 @@ def highlights():
                 
                 elif report_options == "6":
                     # Report For Violence
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[4]').click()
                     # Clicks Dangerous organizations
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/fieldset/div[1]/label/div/input').click()
                     # Submit Report
                     time.sleep(2)
@@ -385,10 +379,10 @@ def highlights():
 
                 elif report_options == "7":
                     # Report For Bullying
-                    time.sleep(3)
+                    time.sleep(4)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[6]').click()
                     # Reports For "Bullying Me
-                    time.sleep(2)
+                    time.sleep(3)
                     web.find_element_by_xpath('/html/body/div[1]/div/div[1]/div/div[2]/div/div/div[1]/div/div[2]/div/div/div/div/div/div/div/div[2]/div/div/div/div[3]/button[1]')
                     # Submit Repor
                     time.sleep(2)
