@@ -12,14 +12,14 @@ except ModuleNotFoundError:
 init(autoreset=False)
 os.system("cls")
 
-print(f"{Fore.WHITE}Welcome To {Fore.RED}Doragon (Open Source)!")
+print(f"{Fore.WHITE}Welcome To {Fore.RED}Doragon Lite!")
 
 username = input(f"\n{Fore.LIGHTYELLOW_EX}[USERNAME]: {Fore.WHITE}")
 password = input(f"{Fore.LIGHTYELLOW_EX}[PASSWORD]: {Fore.WHITE}")
 
-target = input(f"\n{Fore.LIGHTGREEN_EX[TARGET]: {Fore.WHITE}")
+target = input(f"\n{Fore.LIGHTGREEN_EX}[TARGET]: {Fore.WHITE}")
 report_choice = input(f"\n{Fore.RED}(1) Profile \n(2) Stories \n(3) Highlights\n\n{Fore.WHITE}[?] Option: {Fore.WHITE}")
-report_options = input(f"\n{Fore.RED}Choose A Reason! \n\n{Fore.WHITE}(1) Spam \n(2) Suicide, self injury\n(3) Sale of illegal or regulated goods\n(4) Nudity or sexual activity \n(5) Hate speech or symbols\n(6) Violence or dangerous organizations\n(7) Bullying or harassment\n\n{Fore.LIGHTGREEN_EX[?] Option: {Fore.WHITE}") 
+report_options = input(f"\n{Fore.RED}(1) Spam \n(2) Suicide, self injury\n(3) Sale of illegal or regulated goods\n(4) Nudity or sexual activity \n(5) Hate speech or symbols\n(6) Violence or dangerous organizations\n(7) Bullying or harassment\n\n{Fore.GREEN}[?] Option: {Fore.WHITE}") 
 web = webdriver.Chrome()
 web.get("https://www.instagram.com/")
 
@@ -43,14 +43,11 @@ time.sleep(5)
 # login button
 web.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div[2]/form/div/div[3]/button').click()
 time.sleep(7)
+
 # say no to save login.
-try:
-    web.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button').click()
-    print(f"{Fore.GREEN}[LOGGED_IN]{Fore.WHITE} Successfully logged in.")
-except:
-    print(f"{Fore.RED}[ERROR]{Fore.WHITE} There was an issue with your login. Please try again.")
-    time.sleep(3)
-    quit()
+web.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button').click()
+print(f"{Fore.GREEN}[LOGGED_IN]{Fore.WHITE} Successfully logged in.")
+
 
 time.sleep(3)
 # enters target links
